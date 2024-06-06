@@ -13,14 +13,11 @@ body {
 }
 
 /***Navigation Bar***/
-/* Styling for the navigation bar */
 nav {
     color: #fff;
     height: 100%;
     background-color: #8b8b8b;
-    /* Add a bottom border for emphasis */
     border-bottom: 5px solid #ff6f61;
-    /* Add a subtle shadow for depth */
     box-shadow: 0 3px 5px rgba(247, 69, 69, 0.1);
 }
 
@@ -85,7 +82,6 @@ nav li:first-child {
     width: 250px;
     background-color: rgba(240, 231, 231, 0.144);
     backdrop-filter: blur(12px);
-    /* Add a shadow for depth */
     box-shadow: -10px 0 10px rgba(255, 255, 255, 0.1);
     list-style: none;
     display: none;
@@ -111,11 +107,9 @@ nav li:first-child {
 
 /* Media queries for smaller screens */
 @media(max-width: 800px) {
-    /* Hide elements with the class hideOnMobile */
     .hideOnMobile {
         display: none;
     }
-    /* Display the menu button */
     .menu-button {
         display: block;
     }
@@ -123,7 +117,6 @@ nav li:first-child {
 
 /* Media queries for even smaller screens */
 @media(max-width: 400px) {
-    /* Adjust width for the sidebar */
     .sidebar {
         width: 100%;
     }
@@ -142,11 +135,9 @@ h1 {
     margin: 0 auto;
     align-items: center;
     text-align: center;
-    /* Changed from 0% to normal */
     line-height: normal;
     border-radius: 25px;
     justify-content: space-between;
-    max-width: 60%;
 }
 
 /* Styling for paragraphs */
@@ -171,12 +162,9 @@ i {
     color: #fff;
     padding: 20px;
     text-align: center;
-    /* Add a bottom border for emphasis */
     border-top: 5px solid #ff6f61;
-    /* Add a subtle shadow for depth */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    /* Changed from 10px to normal */
     line-height: normal;
 }
 
@@ -188,13 +176,9 @@ i {
 /* Styling for heading 5 inside the footer */
 .footer h5 {
     margin: 0;
-    /* Increase font size for impact */
     font-size: 20px;
-    /* Convert text to uppercase */
     text-transform: uppercase;
-    /* Add letter spacing for readability */
     letter-spacing: 2px;
-    /* Make font bold for emphasis */
     font-weight: bold;
 }
 
@@ -203,30 +187,22 @@ i {
     padding: 20px;
     width: 70%;
     align-items: center;
-    /* Changed from 100% to auto */
     height: auto;
-    /* Corrected the unit to 's' */
     transition: 0.8s;
-    /* Changed display to flex */
     display: flex;
-    /* Aligns images horizontally with space around */
     justify-content: space-around;
-    /* Aligns items vertically */
     align-items: center;
     border-radius: 10px;
-    /* Add a shadow for depth */
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* Styling for images inside div */
 .images div img {
-    /* Changed from 100% to auto */
     height: auto;
     object-fit: cover;
-    /* Border radius applies to individual images */
     border-radius: 10px;
-    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
-    height: auto; /* Allows the image to scale proportionally */
+    max-width: 100%; 
+    height: auto; 
 }
 /* Styling for forms */
 form {
@@ -273,8 +249,8 @@ form div {
 }
 /* Project image styles */
 .project img {
-    max-width: 100%; /* Ensures the image doesn't exceed its container's width */
-    height: auto; /* Allows the image to scale proportionally */
+    max-width: 100%; 
+    height: auto; 
 }
 
 .skills{
@@ -290,37 +266,14 @@ form div {
 .bar-chart {
     background-color: #90c6ff;
     border-radius: 5px;
-    height: 100px; /* Adjust the height of the bar chart */
+    height: 100px; 
     width: 30%;
     overflow: hidden;
 }
 
 .bar {
-    background-color: #f0f0f0; /* Bar color */
-    height: 10px; /* Initial height */
-    transition: height 3s ease-in-out; /* Animation duration */
+    background-color: #f0f0f0;
+    height: 10px; 
+    transition: height 3s ease-in-out;
 }
-
-/* Modal styles */
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999; /* Ensure it's above other content */
-    cursor: pointer; /* Change cursor to pointer when hovering over the modal */
-}
-
-.modal img {
-    max-width: 90%; /* Adjust as needed */
-    max-height: 90%; /* Adjust as needed */
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a shadow effect */
-}
-
 
